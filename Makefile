@@ -19,7 +19,7 @@ CSRCS += fixnum.c bignum.c rational.c real.c complex.c
 
 MAINSRC = steering.c
 
-###??### LDLIBS += ${NUTTX_PATH}/libs
+LDLIBS += $(APPDIR)/../nuttx/libs/libm/libm.a
 
 include $(APPDIR)/Application.mk
 
