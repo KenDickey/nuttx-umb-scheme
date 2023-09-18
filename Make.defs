@@ -1,0 +1,4 @@
+# ?? How to turn off  -Wstrict-prototypes  ??
+ifneq ($(CONFIG_INTERPRETERS_UMB_SCHEME),)
+CONFIGURED_APPS += $(APPDIR)/interpreters/umb-scheme
+endif
