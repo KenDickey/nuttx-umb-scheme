@@ -1763,14 +1763,14 @@ Private void Edit()
 	else
 	{
 		Load_Verbose(); /* The filename to load is still on top of the
-				   stack. Default loading is verbose mode **
+				   stack. Default loading is verbose mode ***
 	}
 }@@ */
 }
 
 Private void Edit_Silent()
 {
-  /*@@KenD@@{
+  /* @@KenD@@{
 	String ed = getenv("EDITOR");
 	String editor;
 	String command;
@@ -1796,18 +1796,18 @@ Private void Edit_Silent()
 	else
 	{
 		Load(); /* The filename to load is still on top of the
-			   stack.***
+		stack.***
 	}
-	}@@KenD@@ */
+}@@ */
 }
 
 Private void System()  /* (system string) */
 {
-        /* Call underlying system command */
   /* @@KenD@@{
+        /* Call underlying system command ***
         Integer completion = system( Get_String_Value(Top(1)) );
         Integer_To_Number( completion );
-	}@@KenD@@ */
+   }@@ */
   Integer_To_Number( -1 ); /* Just Fail @@KenD@@ */
 }
  

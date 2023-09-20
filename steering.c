@@ -60,9 +60,9 @@ Private	void Load_File();
 Private Boolean File_Exists();
 
 
-#define TOP_LEVEL_PROMPT "\n==> "
+#define TOP_LEVEL_PROMPT "\n ==> "
 
-#define STANDARD_PRELUDE_PATHNAME "/usr/local/lib/scheme/prelude.scheme"
+#define STANDARD_PRELUDE_PATHNAME "./prelude.scheme"
 
 Private String OPENING  =
 "Welcome to UMB Scheme, version      Copyright (c) 1988,1996 William R Campbell.\n\
@@ -217,7 +217,7 @@ Public void Read_Eval_Print( input )
 
 		if (Get_Printing_State()) 
 		{
-			Output( "\n" );
+			Output( "\n " );
 			(void) Write_Object( Value_Register , 0 );
 		}
 	}

@@ -86,7 +86,8 @@ typedef long int Integral_Pointer;
 extern void * malloc( /* size_t size */ );
 extern void   free( /* char *ptr */ );
 extern char * getenv( /* const char *name */ );
-/*@@KenD@@ extern int    system( const char command );  */
+/* @@{ extern int    system( const char command ); 
+  -def'ed in apps/import/include/stdlib.h }@@ */
 extern void   exit( /* int status */ );
 extern int    abs( /* int x */ );
 

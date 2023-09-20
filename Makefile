@@ -20,6 +20,7 @@ CSRCS += fixnum.c bignum.c rational.c real.c complex.c
 MAINSRC = steering.c
 
 LDLIBS += $(APPDIR)/../nuttx/libs/libm/libm.a
+LDLIBS += $(APPDIR)/../nuttx/libs/libc/libc.a
 
 include $(APPDIR)/Application.mk
 
