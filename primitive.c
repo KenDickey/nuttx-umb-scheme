@@ -1801,6 +1801,14 @@ Private void Edit_Silent()
 }@@ */
 }
 
+/* @@KenD@@ */
+
+Private void Exit()
+{
+	Output("Scheme is Exiting now.. "); 
+	exit(0);
+}
+
 Private void System()  /* (system string) */
 {
   /* @@KenD@@{
@@ -2216,6 +2224,8 @@ Public void Initialize_Primitive()
 
 	Make_Primitive("#_edits", Edit_Silent, 1, String_Type, 
             The_Undefined_Type, The_Undefined_Type);
+
+        Make_Primitive("exit", Exit, 0, The_Undefined_Type);
 
         Make_Primitive("system", System, 1, String_Type,
             The_Undefined_Type, The_Undefined_Type);
