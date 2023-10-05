@@ -209,6 +209,8 @@ Public void Read_Eval_Print( input )
 
 		if (Value_Register == The_Eof_Object) break;
 
+/*@@KenD@@*/	(void) Write_Object( Value_Register , 0 );
+
 		Push( Value_Register );
 		Compile_Object( Top( 1 ));
 
