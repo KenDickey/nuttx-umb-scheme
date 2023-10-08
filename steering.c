@@ -69,7 +69,8 @@ Private String OPENING  =
 "Welcome to UMB Scheme, version      Copyright (c) 1988,1996 William R Campbell.\n\
 UMB Scheme comes with ABSOLUTELY NO WARRANTY. This is free software and\n\
 you are free to redistribute it under certain conditions.\n\
-See the UMB Scheme Release Notes for details. Type Control-d to exit.\n\n";
+See the UMB Scheme Release Notes for details. \n\
+Type `(exit)` or Control-d to exit.\n\n";
 
 Private String Rev = "$Revision: 3.2 $";
 
@@ -310,7 +311,7 @@ Public	void Break()
 Public	void Reset()
 {
 	Debugger_Activated = FALSE;
-	Error_Output( "\nReset (Use Control-d to quit UMB Scheme)" );
+	Error_Output( "\nReset (Type `(exit)` or Control-d to quit UMB Scheme)" );
 	longjmp( Top_Level_Loop , 1 );
 }
 
