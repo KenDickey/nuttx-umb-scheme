@@ -62,8 +62,8 @@ Private Boolean File_Exists();
 
 #define TOP_LEVEL_PROMPT "\n ==> "
 
-#define STANDARD_PRELUDE_PATHNAME "prelude.scheme"
-/* @@FixMe@@  "/system/bin/prelude.scheme"  */
+/* For NuttX (WIP) */
+#define STANDARD_PRELUDE_PATHNAME "/system/bin/prelude.scheme"
 
 Private String OPENING  =
 "Welcome to UMB Scheme, version      Copyright (c) 1988,1996 William R Campbell.\n\
