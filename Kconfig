@@ -7,14 +7,14 @@ config INTERPRETERS_UMB_SCHEME
 		- Be sure to set CONFIG_LIBM=y in your .config file
 		- Be sure to set CONFIG_ARCH_SETJMP_H=y in your .config file
 
-#if INTERPRETERS_UMB_SCHEME
-#
-#config INTERPRETERS_UMB_SCHEME_PRIORITY
-#        int "UMB-Scheme task priority"
-#        default 100
-#
-#config INTERPRETERS_UMB_SCHEME_STACKSIZE
-#        int "UMB-Scheme stack size"
-#	default 4096
-#
-#endif
+if INTERPRETERS_UMB_SCHEME
+
+config INTERPRETERS_UMB_SCHEME_PRIORITY
+        int "UMB-Scheme task priority"
+        default 100
+
+config INTERPRETERS_UMB_SCHEME_STACKSIZE
+        int "UMB-Scheme stack size"
+	default 8192
+
+endif
