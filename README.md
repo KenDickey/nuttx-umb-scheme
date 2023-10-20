@@ -13,6 +13,7 @@ nuttx/.config needs
 CONFIG_LIBM=y
 CONFIG_ARCH_FLOAT_H=y
 CONFIG_ARCH_SETJMP_H=y
+CONFIG_POSIX_SPAWN_DEFAULT_STACKSIZE=8192
 ```
 Note that `make menuconfig` can select NuttX LibM to set the first 2 flags above.
 
