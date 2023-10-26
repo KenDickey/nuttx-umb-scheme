@@ -1805,7 +1805,7 @@ Private void Edit_Silent()
 
 Private void Exit()
 {
-	Output("Scheme is Exiting now.. "); 
+	Output("Scheme is Exiting now.. \n\n"); 
 	exit(0);
 }
 
